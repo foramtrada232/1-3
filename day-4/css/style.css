@@ -1,0 +1,47 @@
+body{
+    background-color: gray;
+}
+.card-title{
+    padding: 10px;
+    text-align: center;
+}
+.mdc-text-field{
+    margin: 20px 50px;
+}
+.mdc-card {
+    margin: 20px 50px;
+    background-color: lightgray;
+    padding:20px 50px;
+}
+.mdc-switch{
+
+	margin-top: 20px;
+}
+.switch-1{
+
+	margin-left: 25px;
+}
+.switch-2{
+
+	margin-left: 75px;
+}
+.mdc-layout-grid {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 24px;
+    padding: var(--mdc-layout-grid-margin-desktop, 24px);
+    background-color: #1fb2cc;
+    margin-top: 20px;
+}
+.mdc-button:not(:disabled) {
+    color: #6200ee;
+    color: var(--mdc-theme-primary, #6200ee);
+    
+    margin-top: 20px;
+}
+
+mat-card-title{
+	margin-left: 350px;
+	font-size: 45px;
+	color: black;
+}
