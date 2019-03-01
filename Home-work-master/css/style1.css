@@ -1,0 +1,257 @@
+body*{
+  border-sizeing : border-box;
+}
+body,input{
+  color: #202124;
+  font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #1a73e8;
+}
+.card1{
+  width: 448px;
+  margin: 60px auto;
+  display: flex;
+  padding: 30px 20px 20px 30px;
+  border: 1px solid lightgray;
+}
+.text-ph {
+  margin-bottom: 10px;
+}
+.text-e{
+   margin-bottom: 15px;
+}
+.text-4{
+  margin-top: -210px;
+  margin-bottom: 20px;
+}
+.text-5{
+  margin-top: -210px;
+}
+.recovery{
+  margin-top: 30px;
+}
+.account{
+  margin: 5px;
+}
+.month{
+  margin: 20px 0;
+}
+.day{
+  margin-top: 20px;
+}
+.year{
+  margin-top: 20px;
+}
+.account1{
+  margin-bottom: 20px;
+}
+.gender{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.card2{
+  width: 800px;
+      background: #fff;
+    border: 1px solid #dadce0;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: flex;
+    margin: 0 auto;
+}
+.this{
+  color: #1a73e8;
+}
+.back{
+  margin-top: 30px;
+}
+.textf{
+  margin: 15px ;
+
+}
+.image{
+  width: 25%;
+  height: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: 15px;
+}
+.image1{
+ width: 20%;
+ height: 20%;
+ margin-top: 10px;
+ margin-left: 15px;
+}
+.image2{
+ /* width:80%;
+  height: inherit;
+  float: right;*/
+      width: 100%;
+    /* float: right; */
+    /* margin-top: -170px; */
+}
+  /*margin-top: -170px;*/
+}
+.eye{
+  margin-top: 10px;
+  width: 30px;
+}
+.youb{
+  margin-top: -130px;
+}
+/*.yout{
+  margin-bottom: 0;
+}*/
+.use{
+  font-size: 15px;
+  margin-top: 10px;
+}
+.text{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 5px;
+  line-height: 1.4286;
+}
+.text2{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .1px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.text3{
+  /*text-align: left;*/
+  font-family: 'Google Sans',arial,sans-serif;
+  padding-bottom: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-left: 30px;
+  margin-top: 0;
+}
+.text-3{
+  width: inherit;
+  margin-top: 10px;
+}
+.text4{
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .1px;
+  text-align: left;
+  margin-top: 0;
+  margin-left:30px;
+}
+.you{
+  font-size: 15px;
+  margin-top:  10px;
+ /* margin-bottom: 20px;*/
+}
+.forgot{
+  border-radius: 4px;
+  color: #1a73e8;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: .25px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: inherit;
+  outline: 0;
+  padding: 0;
+  text-align: left;
+  margin: 13px;
+}
+.forgot2{
+  border-radius: 4px;
+  color: #1a73e8;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: .25px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: inherit;
+  outline: 0;
+  padding: 0;
+  text-align: left;
+  margin-top: 50px;
+}
+.forgot1{
+  border-radius: 4px;
+  color: #1a73e8;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: .25px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: inherit;
+  outline: 0;
+  padding: 0;
+  text-align: left;
+  margin-left: 13px;
+}
+.not{
+  /* padding-bottom: 3px;
+  padding-top: 9px; */
+  color: #5f6368;
+  font-size: 14px;
+  line-height: 1.4286;
+  margin-top: 32px;
+  margin-left: 13px;
+}
+.create{
+  /*display: inline-block;
+  margin: .5em;
+  max-width: 300px;
+  margin: 8px 8px;
+  text-transform: none;
+  color: #1a73e8;
+  margin-top: 50px;
+  margin-bottom: 50px;*/
+  font-weight: 400;
+}
+.mdc-text-field{
+  width: 100%;
+}
+.btn{
+  float: right;
+}
+.btn2{
+  width: 17%;
+  margin-left: 250px;
+}
+.btn3{
+  width: 17%;
+  margin-left: 360px;
+}
+.personal{
+  color: gray;
+  font-size: 15px;
+}
+figcaption{
+  font-size: 16px;
+    font-weight: 300;
+    display: flex;
+}
+.fg{
+  text-align: center;
+}
+.mdc-button{
+  background-color: #1a73e8;
+  /* padding: 25px; */
+}
+.mdc-button:not(:disabled) {
+  background-color: #1a73e8;
+  color:white;
+  font-size: 12px;
+  width: 17%;
+}

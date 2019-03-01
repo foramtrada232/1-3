@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Material design task 2</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="css/style3.css">
+</head>
+<body>
+
+  <div class="mdc-drawer__header">
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          <span class="mdc-top-app-bar__title"><img src="Day-5/image/1.png">  Gmail</span>
+          <div class="mdc-text-field mdc-text-field--no-label">
+            <span class="mdc-tab__icon material-icons " aria-hidden="true">search</span>
+            <input type="text" class="mdc-text-field__input" placeholder="search mail" aria-label="Label">
+            <!--  <div class="mdc-line-ripple"></div> -->
+            
+          </div>
+          <!-- <span class="contact"><a href="file:///S:/Rao/Home-work-master/contact.html"><b>Contact us</b></a></span> -->
+        </section>
+      </div>
+    </header>
+  </div>
+  <aside class="mdc-drawer mdc-drawer--dismissible">
+    <div class="mdc-drawer__content">
+      <div class="mdc-list">
+        <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+          <span class="mdc-list-item__text">Inbox</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>
+          <span class="mdc-list-item__text">Star</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+          <span class="mdc-list-item__text">Sent mail</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+          <span class="mdc-list-item__text">Drafts</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>
+          <span class="mdc-list-item__text">All mail</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>
+          <span class="mdc-list-item__text">Trash</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">error</i>
+          <span class="mdc-list-item__text">Spam</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+
+  <div class="mdc-drawer-app-content">
+    <main class="main-content" id="main-content">
+      <div class="mdc-top-app-bar--fixed-adjust">
+       <div class="mdc-layout-grid " style="background-color: lightgray;">
+  <h1 class="cent1">our<span style="color: blue;"> Mission</span></h1>
+  <div class="mdc-layout-grid__inner" >
+    <div class="mdc-layout-grid__cell--span-1">
+    </div>
+    <div class="mdc-layout-grid__cell--span-3">
+      <div class="mdc-image-list__image-aspect-container">
+        <img class="mdc-image-list__image" src="29.jpg" width="300" height="200" style="border-radius: 210px; border:  5px solid #ec7e50;">
+      </div>
+    </div>
+    <div class="mdc-layout-grid__cell--span-1">
+    </div>
+    <div class="mdc-layout-grid__cell--span-7">
+      <h3 class="about">About Us</h3></br></br>
+      <p class="about">There is some optimism, but hardly certainty, that Smith will be able to resume his NFL career, though the priority for now is simply recovering from a spiral leg fracture that became infected after multiple surgeries.
+
+      </p>
+      <p>That situation now would be a double whammy for Washington. Not only would the Redskins be losing their quarterback if Smith were unable to return, but the team also would have less money to spend on a new one, putting Washington at a major disadvantage the next two years. The Redskins have only approximately $20 million in salary-cap space this offseason, but they can release several high-priced veterans to create more room.That situation now would be a double whammy for Washington. Not only would the Redskins be losing their quarterback if Smith were unable to return, but the team also would have less money to spend on a new one, putting Washington at a major disadvantage the next two years. </p>
+
+      <button class="mdc-button--raised about_btn" style="height: 40px;">
+        <span class="mdc-button__label">READ MORE </span>
+      </button>
+    </div>
+
+  </div>
+</div>
+</div>
+
+</main>
+</div>
+</body>
+
+<script type="text/javascript">
+
+  mdc.autoInit();
+
+  var drawer = new mdc.drawer.MDCDrawer(document.querySelector('.mdc-drawer'));
+  const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+  topAppBar.setScrollTarget(document.getElementById('main-content'));
+  topAppBar.listen('MDCTopAppBar:nav', () => {
+    drawer.open = !drawer.open;
+  });
+  mdc.tabBar.MDCTabBar.attachTo(document.querySelector('.mdc-tab-bar'));
+  MDCIconToggle.attachTo(document.querySelector('.mdc-icon-toggle'));
+
+   mdc.iconButton.MDCIconButtonToggle.attachTo(document.querySelector('mdc-icon-button'))
+
+</script>
+</html>
