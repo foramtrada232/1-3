@@ -1,0 +1,17 @@
+body*{
+  border-sizeing : border-box;
+}
+body,input{
+  color: #202124;
+  font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+
+.card2{
+  width: 800px;
+      background: #fff;
+    border: 1px solid #dadce0;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: flex;
+    margin: 0 auto;
+}
