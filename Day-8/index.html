@@ -11,7 +11,7 @@
 <body>
 	<div class="header_top">
 		<div class="custom_container">
-			<ul class="ul1">
+			<ul class="ul1 pipe-separated-list-container">
 				<li class="l1">Call 1800 22 7979</li>
 				<li class="l1">Select currency:
 					<div class="mdc-select currency">
@@ -65,48 +65,82 @@
 	<div class="header_bottom">
 		<div class="custom_container">
 			<div class="c3">
-				<input type="text" name="search" placeholder="  Where would you like to go?">
-				<button class="mdc-button sign2 ">
+				<div class="mdc-text-field">
+					<input type="text" id="my-text-field" class="mdc-text-field__input">
+					<label class="mdc-floating-label" for="my-text-field"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">search</i>Where would you to like to go?</label><button class="mdc-button sign2 ">
+						<span class="mdc-button__label">Let's Go</span>
+					</button>
+					<div class="mdc-line-ripple"></div>
+				</div>
+				<!-- <div class="mdc-text-field-helper-line">
+					<div class="mdc-text-field-helper-text">Password</div>
+				</div> -->
+				<!-- <div class="mdc-text-field mdc-text-field--outlined">
+					<input type="text" id="tf-outlined" class="mdc-text-field__input">
+					<div class="mdc-notched-outline">
+						<div class="mdc-notched-outline__leading"></div>
+						<div class="mdc-notched-outline__notch">
+							<label for="tf-outlined" class="mdc-floating-label">Your Name</label>
+						</div>
+						<div class="mdc-notched-outline__trailing"></div>
+					</div>
+				</div> -->
+				<!-- <div class="mdc-text-field">
+					<input type="text" id="username" class="mdc-text-field__input"
+					>
+					<label for="username" class="mdc-floating-label">Username</label>
+					<button class="mdc-button sign2 ">
 					<span class="mdc-button__label">Let's Go</span>
 				</button>
-				<!-- <div class="mdc-text-field mdc-text-field--with-leading-icon">
-					<i class="material-icons mdc-text-field__icon" tabindex="0" role="button">search</i>
-					<input type="text" id="my-input" class="mdc-text-field__input">
-					<label for="my-input" class="mdc-floating-label">Wher Would you like to go?</label>  -->
-					<!-- <div class="mdc-line-ripple"></div>
-				</div><button class="mdc-button" >
-						<span class="mdc-button__label">Sign In</span>
-					</button> -->
-
-					<!-- <input type="text" name="search" placeholder="  Where would you like to go?"> <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">search</a> -->
-			<!-- <button class="mdc-button" >
-				<span class="mdc-button__label">Sign In</span>
-			</button> -->
+					<div class="mdc-line-ripple"></div>
+				</div> -->
+				<!-- <div class="mdc-text-field-helper-line">
+					<div id="username-helper-text" class="mdc-text-field-helper-text" aria-hidden="true">
+						This will be displayed on your public profile
+					</div>
+				</div> -->
+				<!-- <input type="text" name="search" placeholder="  Where would you like to go?">
+				<button class="mdc-button sign2 ">
+					<span class="mdc-button__label">Let's Go</span>
+				</button> -->
+			</div>
+		</div>
+	</div>
+	<div class="image_slider">
+		<div class="img_slide">
+			<img src="images/12.jpg">
+		</div>
+		<div class="img_slide">
+			<img src="images/2.jpg">
+		</div>
+		<div class="img_slide">
+			<img src="images/10.jpg">
+		</div>
+		<div class="img_slide">
+			<img src="images/s1.jpeg">
+		</div>
+		<div class="img_slide">
+			<img src="images/s2.jpeg">
+		</div>
+	</div>
+	<div class="disc">
+		<div class="mdc-layout-grid">
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell--span-6" style="margin-top: 200px;
+				margin-left: 200px;">
+				<img class="offer" src="images/offer2.png">
+				<h1 class="mdc-typography--headline4 off">Summer Offers</h1>
+				<p class="mdc-typography--subtitle2">Lorem ipsum dolor sit amet, ex dicam definitiones cum. Falli decore quaeque eu est. Has ad salutatus deseruisse, sit fuisset democritum delicatissimi id. Id probo veniam honestatis vel. Mel modus imperdiet gubergren in, eam at inani doctus repudiandae. Ad per eros solum appetere.</p>
+			</div>
+			<div class="mdc-layout-grid__cell--span-6"></div>
 		</div>
 	</div>
 </div>
-<div class="image_slider">
-	<div class="img_slide">
-		<img src="images/12.jpg">
-	</div>
-	<div class="img_slide">
-		<img src="images/2.jpg">
-	</div>
-	<div class="img_slide">
-		<img src="images/10.jpg">
-	</div>
-	<div class="img_slide">
-		<img src="images/s1.jpeg">
-	</div>
-	<div class="img_slide">
-		<img src="images/s2.jpeg">
-	</div>
-</div>
-
 <div class="slider_bottom">
 	<div class="custom_container">
 		<div class="mdc-layout-grid">
 			<h1 class="cent">Eeatured Travel <span style="color: #d02033;"> DESTINATIONS</span></h1>
+			<div class="hr"><center><hr> <span class="hr2"><hr></span> <hr></center></div>
 			<div class="mdc-layout-grid__inner">
 				<div class="mdc-layout-grid__cell--span-1">
 				</div>
@@ -116,13 +150,13 @@
 
 					</div>
 					<div class="content1">
-						<p> > Las Vegas</p>
-						<p> > Los Angeles</p>
-						<p> > New York</p>
-						<p> > Orlando</p>
-						<p> > SanFranciso</p>
-						<p> > Washington DC</p>
-						<p class="heading1_footer"><b> > + View More</b></p>
+						<p class="p1"> > Las Vegas</p>
+						<p class="p1"> > Los Angeles</p>
+						<p class="p1"> > New York</p>
+						<p class="p1"> > Orlando</p>
+						<p class="p1"> > SanFranciso</p>
+						<p class="p1"> > Washington DC</p>
+						<p class="heading1_footer p1"><b> > + View More</b></p>
 					</div>
 
 				</div>
@@ -132,13 +166,13 @@
 
 					</div>
 					<div class="content2">
-						<p> > Las Vegas</p>
-						<p> > Los Angeles</p>
-						<p> > New York</p>
-						<p> > Orlando</p>
-						<p> > SanFranciso</p>
-						<p> > Washington DC</p>
-						<p class="heading2_footer"><b> > + View More</b></p>
+						<p class="p1"> > Las Vegas</p>
+						<p class="p1"> > Los Angeles</p>
+						<p class="p1"> > New York</p>
+						<p class="p1"> > Orlando</p>
+						<p class="p1"> > SanFranciso</p>
+						<p class="p1"> > Washington DC</p>
+						<p class="heading2_footer p1"><b> > + View More</b></p>
 					</div>
 
 				</div>
@@ -147,13 +181,13 @@
 						<h2 class="head2">EUROPE</h2>
 					</div>
 					<div class="content3">
-						<p> > Las Vegas</p>
-						<p> > Los Angeles</p>
-						<p> > New York</p>
-						<p> > Orlando</p>
-						<p> > SanFranciso</p>
-						<p> > Washington DC</p>
-						<p class="heading3_footer"><b> > + View More</b></p>
+						<p class="p1"> > Las Vegas</p>
+						<p class="p1"> > Los Angeles</p>
+						<p class="p1"> > New York</p>
+						<p class="p1"> > Orlando</p>
+						<p class="p1"> > SanFranciso</p>
+						<p class="p1"> > Washington DC</p>
+						<p  class="heading3_footer p1"><b> > + View More</b></p>
 					</div>
 				</div>
 				<div class="mdc-layout-grid__cell--span-2">
@@ -162,13 +196,13 @@
 
 					</div>
 					<div class="content4">
-						<p> > Las Vegas</p>
-						<p> > Los Angeles</p>
-						<p> > New York</p>
-						<p> > Orlando</p>
-						<p> > SanFranciso</p>
-						<p> > Washington DC</p>
-						<p class="heading4_footer"><b> > + View More</b></p>
+						<p class="p1"> > Las Vegas</p>
+						<p class="p1"> > Los Angeles</p>
+						<p class="p1"> > New York</p>
+						<p class="p1"> > Orlando</p>
+						<p class="p1"> > SanFranciso</p>
+						<p class="p1"> > Washington DC</p>
+						<p  class="heading4_footer p1"><b> > + View More</b></p>
 					</div> 
 
 
@@ -180,13 +214,13 @@
 
 					</div>
 					<div class="content5">
-						<p> > Las Vegas</p>
-						<p> > Los Angeles</p>
-						<p> > New York</p>
-						<p> > Orlando</p>
-						<p> > SanFranciso</p>
-						<p> > Washington DC</p>
-						<p class="heading5_footer"><b> > + View More</b></p>
+						<p class="p1"> > Las Vegas</p>
+						<p class="p1"> > Los Angeles</p>
+						<p class="p1"> > New York</p>
+						<p class="p1"> > Orlando</p>
+						<p class="p1"> > SanFranciso</p>
+						<p class="p1"> > Washington DC</p>
+						<p class="heading5_footer p1"><b> > + View More</b></p>
 					</div>
 				</div>
 				<div class="mdc-layout-grid__cell--span-1">
@@ -199,6 +233,7 @@
 	<div class="custom_container">
 		<div class="mdc-layout-grid">
 			<h1 class="cent1">Our<span class="mission"> Mission</span></h1>
+			<div class="hr"><center><hr> <span class="hr3"><hr></span> <hr></center></div>
 			<div class="mdc-layout-grid__inner" >
 				<div class="mdc-layout-grid__cell--span-1">
 				</div>
@@ -211,7 +246,8 @@
 				</div>
 				<div class="mdc-layout-grid__cell--span-7">
 					<h3 class="about">About Us</h3>
-					<p class="about">There is some optimism, but hardly certainty, that Smith will be able to resume his NFL career, though the priority for now is simply recovering from a spiral leg fracture that became infected after multiple surgeries.
+
+					<p class="about1">There is some optimism, but hardly certainty, that Smith will be able to resume his NFL career, though the priority for now is simply recovering from a spiral leg fracture that became infected after multiple surgeries.
 
 					</p>
 					<p>That situation now would be a double whammy for Washington. Not only would the Redskins be losing their quarterback if Smith were unable to return, but the team also would have less money to spend on a new one, putting Washington at a major disadvantage the next two years. The Redskins have only approximately $20 million in salary-cap space this offseason, but they can release several high-priced veterans to create more room.That situation now would be a double whammy for Washington. Not only would the Redskins be losing their quarterback if Smith were unable to return, but the team also would have less money to spend on a new one, putting Washington at a major disadvantage the next two years. </p>
@@ -228,26 +264,25 @@
 	<div class="custom_container">
 		<div class="mdc-layout-grid">
 			<h1 class="cent2">India<span style="color: #e6a02a;"> TOURS</span></h1>
+			<div class="hr"><center><hr> <span class="hr4"><hr></span> <hr></center></div>
+			
 			<div class="mdc-layout-grid__inner">
-				<div class="mdc-layout-grid__cell--span-2"></div>
-				<div class="mdc-layout-grid__cell--span-3">
+				<!-- <div class="mdc-layout-grid__cell--span-2"></div> -->
+				<div class="mdc-layout-grid__cell--span-4">
 					<div class="mdc-card">
 						<div class="mdc-image-list__image-aspect-container andaman">
 							<img class="mdc-image-list__image" src="images/c1.PNG" >
 						</div>
 						<div class="padding">
-							<h5 class="card-title">Andaman Tour Packages</h5>
-							<p class="card-text"><span class="keyboard_arrow_right t1" >></span>Port Blair<span class="keyboard_arrow_right t1">></span>HaveLock<span class="keyboard_arrow_right t1">></span>Neil Isaland</p>
+							<h5 class="card-title ">Andaman Tour Packages</h5>
+							<p class="card-text "><span class="keyboard_arrow_right t1" >></span>Port Blair<span class="keyboard_arrow_right t1">></span>HaveLock<span class="keyboard_arrow_right t1">></span>Neil Isaland</p>
 							<button class="mdc-button itour1">
 								<span class="mdc-button__label ">VIEW MORE</span>
 							</button>
 						</div>
 					</div>
 				</div>
-				<!-- </div>
-				</div> -->
-		
-				<div class="mdc-layout-grid__cell--span-3">
+				<div class="mdc-layout-grid__cell--span-4">
 					<div class="mdc-card">
 						<div class="mdc-image-list__image-aspect-container andaman">
 							<img class="mdc-image-list__image" src="images/c2.PNG" >
@@ -261,7 +296,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="mdc-layout-grid__cell--span-3">
+				<div class="mdc-layout-grid__cell--span-4">
 					<div class="mdc-card">
 						<div class="mdc-image-list__image-aspect-container andaman">
 							<img class="mdc-image-list__image" src="images/c3.PNG" >
@@ -275,11 +310,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="mdc-layout-grid__cell--span-1"></div>
+				<!-- <div class="mdc-layout-grid__cell--span-1"></div> -->
 			</div>
 		</div>
 
-</div>	
+	</div>	
 </div>
 
 
@@ -287,8 +322,8 @@
 	<div class="custom_container">
 		<div class="mdc-layout-grid">
 			<div class="mdc-layout-grid__inner">
-				<div class="mdc-layout-grid__cell--span-2"></div>
-				<div class="mdc-layout-grid__cell--span-3">
+				<!-- <div class="mdc-layout-grid__cell--span-2"></div> -->
+				<div class="mdc-layout-grid__cell--span-4">
 					<div class="mdc-card">
 						<div class="mdc-image-list__image-aspect-container andaman">
 							<img class="mdc-image-list__image" src="images/c4.PNG" >
@@ -304,7 +339,7 @@
 
 				</div>
 
-				<div class="mdc-layout-grid__cell--span-3">
+				<div class="mdc-layout-grid__cell--span-4">
 					<div class="mdc-card">
 						<div class="mdc-image-list__image-aspect-container andaman">
 							<img class="mdc-image-list__image" src="images/c5.PNG" >
@@ -318,7 +353,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="mdc-layout-grid__cell--span-3">
+				<div class="mdc-layout-grid__cell--span-4">
 					<div class="mdc-card">
 						<div class="mdc-image-list__image-aspect-container andaman">
 							<img class="mdc-image-list__image" src="images/c6.PNG" >
@@ -333,7 +368,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="mdc-layout-grid__cell--span-1"></div>
+				<!-- <div class="mdc-layout-grid__cell--span-1"></div> -->
 			</div>
 		</div>
 	</div>	
@@ -341,135 +376,153 @@
 <div class="slider_bottom4">
 	<div class="custom_container">
 		<div class="mdc-layout-grid">
-		<h1 class="mdc-typography--headline4">Best Selling <span>tourS</span></h1>
-		<div class="mdc-layout-grid__inner">
-			<div class="mdc-layout-grid__cell--span-3"></div>
-			<div class="mdc-layout-grid__cell--span-9">
-				<div class="mdc-layout-grid tab_section">
-					<div class="mdc-layout-grid__inner">
-						<div class="mdc-layout-grid__cell--span-4">
-							<div class="tour">
-								<label class="nd">(3N/4D)</label>
-								<h3 class="tour_txt1">Rs.6800</h3>
-								<p class="mdc-typography--caption">Per Person</p>
-								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button itour4">
-									<span class="mdc-button__label ">VIEW MORE</span>
-								</button></center>
-							</div>
-	
-						</div>
-						<div class="mdc-layout-grid__cell--span-4">
-							<div class="tour">
-								<label class="nd">(3N/4D)</label>
-								<h3 class="tour_txt2">Rs.6800</h3>
-								<p class="mdc-typography--caption">Per Person</p>
-								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button itour1">
-									<span class="mdc-button__label ">VIEW MORE</span>
-								</button></center>
-							</div>
-	
-						</div>
-						<div class="mdc-layout-grid__cell--span-4">
-							<div class="tour">
-								<label class="nd">(3N/4D)</label>
-								<h3 class="tour_txt3">Rs.6800</h3>
-								<p class="mdc-typography--caption">Per Person</p>
-								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button itour6">
-									<span class="mdc-button__label ">VIEW MORE</span>
-								</button></center>
-							</div>
-	
-						</div>
-	
-	
-					</div>
-	
+			<h1 class="mdc-typography--headline4">Best Selling <span class="holiday">HOLIDAYS</span></h1>
+			<div class="hr"><center><hr> <span class="hr5"><hr></span> <hr></center></div>
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell--span-3">
+					<div class="tab-border"id="tours">
+						
+						<li class="btour" >Bali Tours</li>
+						<li>Dubai Tours</li>
+						<li>Mauritius Tours</li>
+						<li>Thailand Tours</li>
+						<li>Singapore Tours</li>
+						<li>Hong Kong Tours</li>
+						<li>Maldives Tours</li>
+						<li>Italy Tours</li>
+						<li>France Tours</li>
+						<li>Amritsar Tours</li>
+						<li>Himachal Tours</li>
+						<li>Kerala Tours</li>
+					</div>			
 				</div>
-				<div class="mdc-layout-grid tab_section">
-					<div class="mdc-layout-grid__inner">
-						<div class="mdc-layout-grid__cell--span-4">
-							<div class="tour">
-								<label class="nd">(3N/4D)</label>
-								<h3 class="tour_txt4">Rs.6800</h3>
-								<p class="mdc-typography--caption">Per Person</p>
-								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button itour5">
-									<span class="mdc-button__label ">VIEW MORE</span>
-								</button></center>
+				<div class="mdc-layout-grid__cell--span-9">
+					<div class="tab_section">
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="tour">
+									<label class="nd">(3N/4D)</label>
+									<h3 class="tour_txt1">Rs.6800</h3>
+									<p class="mdc-typography--caption">Per Person</p>
+									<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+									<center><button class="mdc-button itour4">
+										<span class="mdc-button__label ">VIEW MORE</span>
+									</button></center>
+								</div>
+
 							</div>
-	
-						</div>
-						<div class="mdc-layout-grid__cell--span-4">
-							<div class="tour">
-								<label class="nd">(3N/4D)</label>
-								<h3 class="tour_txt5">Rs.6800</h3>
-								<p class="mdc-typography--caption">Per Person</p>
-								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button itour2">
-									<span class="mdc-button__label ">VIEW MORE</span>
-								</button></center>
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="tour">
+									<label class="nd">(3N/4D)</label>
+									<h3 class="tour_txt2">Rs.6800</h3>
+									<p class="mdc-typography--caption">Per Person</p>
+									<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+									<center><button class="mdc-button itour1">
+										<span class="mdc-button__label ">VIEW MORE</span>
+									</button></center>
+								</div>
+
 							</div>
-	
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="tour">
+									<label class="nd">(3N/4D)</label>
+									<h3 class="tour_txt3">Rs.6800</h3>
+									<p class="mdc-typography--caption">Per Person</p>
+									<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+									<center><button class="mdc-button itour6">
+										<span class="mdc-button__label ">VIEW MORE</span>
+									</button></center>
+								</div>
+
+							</div>
+
+
 						</div>
-						<div class="mdc-layout-grid__cell--span-4">
-							<div class="tour">
-								<label class="nd">(3N/4D)</label>
-								<h3 class="tour_txt6">Rs.6800</h3>
-								<p class="mdc-typography--caption">Per Person</p>
-								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button itour3">
-									<span class="mdc-button__label ">VIEW MORE</span>
-								</button></center>
+
+					</div>
+					<div class="tab_section">
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="tour">
+									<label class="nd">(3N/4D)</label>
+									<h3 class="tour_txt4">Rs.6800</h3>
+									<p class="mdc-typography--caption">Per Person</p>
+									<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+									<center><button class="mdc-button itour5">
+										<span class="mdc-button__label ">VIEW MORE</span>
+									</button></center>
+								</div>
+
+							</div>
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="tour">
+									<label class="nd">(3N/4D)</label>
+									<h3 class="tour_txt5">Rs.6800</h3>
+									<p class="mdc-typography--caption">Per Person</p>
+									<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+									<center><button class="mdc-button itour2">
+										<span class="mdc-button__label ">VIEW MORE</span>
+									</button></center>
+								</div>
+
+							</div>
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="tour">
+									<label class="nd">(3N/4D)</label>
+									<h3 class="tour_txt6">Rs.6800</h3>
+									<p class="mdc-typography--caption">Per Person</p>
+									<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+									<center><button class="mdc-button itour3">
+										<span class="mdc-button__label ">VIEW MORE</span>
+									</button></center>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="mdc-layout-grid tab_section">
-					<div class="mdc-layout-grid__inner">
-						<div class="mdc-layout-grid__cell--span-4">
-							<div class="tour">
-								<label class="nd">(3N/4D)</label>
-								<h3 class="tour_txt1">Rs.6800</h3>
-								<p class="mdc-typography--caption">Per Person</p>
-								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button itour4">
-									<span class="mdc-button__label ">VIEW MORE</span>
-								</button></center>
+					<div class="tab_section">
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="tour">
+									<label class="nd">(3N/4D)</label>
+									<h3 class="tour_txt1">Rs.6800</h3>
+									<p class="mdc-typography--caption">Per Person</p>
+									<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+									<center><button class="mdc-button itour4">
+										<span class="mdc-button__label ">VIEW MORE</span>
+									</button></center>
+								</div>
 							</div>
-						</div>
-						<div class="mdc-layout-grid__cell--span-4">
-							<div class="tour">
-								<label class="nd">(3N/4D)</label>
-								<h3 class="tour_txt2">Rs.6800</h3>
-								<p class="mdc-typography--caption">Per Person</p>
-								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button itour1">
-									<span class="mdc-button__label ">VIEW MORE</span>
-								</button></center>
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="tour">
+									<label class="nd">(3N/4D)</label>
+									<h3 class="tour_txt2">Rs.6800</h3>
+									<p class="mdc-typography--caption">Per Person</p>
+									<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+									<center><button class="mdc-button itour1">
+										<span class="mdc-button__label ">VIEW MORE</span>
+									</button></center>
+								</div>
 							</div>
-						</div>
-						<div class="mdc-layout-grid__cell--span-4">
-							<div class="tour">
-								<label class="nd">(3N/4D)</label>
-								<h3 class="tour_txt3"e>Rs.6800</h3>
-								<p class="mdc-typography--caption">Per Person</p>
-								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button itour6">
-									<span class="mdc-button__label ">VIEW MORE</span>
-								</button></center>
+							<div class="mdc-layout-grid__cell--span-4">
+								<div class="tour">
+									<label class="nd">(3N/4D)</label>
+									<h3 class="tour_txt3"e>Rs.6800</h3>
+									<p class="mdc-typography--caption">Per Person</p>
+									<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+									<center><button class="mdc-button itour6">
+										<span class="mdc-button__label ">VIEW MORE</span>
+									</button></center>
+								</div>
 							</div>
-						</div>
-					</div>	
+						</div>	
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-		</div>
-	</div>
 </div>
+</div>
+
 <div class="slider_bottom5">
 	<div class="custom_container">
 		<div class="mdc-layout-grid backimage">
@@ -493,7 +546,7 @@
 				<div class="mdc-layout-grid__cell--span-5">
 				</div>
 			</div>
-		
+
 			<div class="mdc-layout-grid__inner ">
 				<div class="mdc-layout-grid__cell--span-5">
 				</div>
@@ -507,7 +560,7 @@
 				<div class="mdc-layout-grid__cell--span-5">
 				</div>
 				<div class="mdc-layout-grid__cell--span-2">
-					<h4 class="direct">Director,We Care Holidays</h4></br>
+					<h4 class="direct">Director,We Care Holidays</h4>
 				</div>
 				<div class="mdc-layout-grid__cell--span-5">
 				</div>
@@ -522,14 +575,15 @@
 				</div>
 			</div>
 		</div>
+
+
 	</div>
 </div>
+
 <div class="footer">
 	<div class="custom_container">
 		<div class="mdc-layout-grid footer">
 			<div class="mdc-layout-grid__inner">
-				<!-- <div class="mdc-layout-grid__cell--span-2">
-				</div> -->
 				<div class="mdc-layout-grid__cell--span-5">
 					<p class="mdc-typography--headline6 footer_about">ABOUT US</p>
 					<p class="footer_about_p">Lorem ipsum dolor sit amet, ex dicam definitiones cum. Falli decore quaeque eu est. Has ad salutatus deseruisse, sit fuisset democritum delicatissimi id. Id probo veniam honestatis vel. Mel modus imperdiet gubergren in, eam at inani doctus repudiandae. Ad per eros solum appetere. </p>
@@ -539,15 +593,14 @@
 							<img src="images/map.PNG" class="footer_img">
 						</div>
 						<div class="mdc-layout-grid__cell--span-10">
-							<p class="footer_about_p">king trips Pvt Ltd Plot NO - 84,
+							<p class="footer_about_p address">king trips Pvt Ltd Plot NO - 84,
 								Pocket C-7,Sector -7,Rohini,
 							New Delhi - 110085</p>
 						</div>	
 					</div>	
-		
-		
+
+
 				</div>
-				<!-- <div class="mdc-layout-grid__cell--span-1"></div> -->
 				<div class="mdc-layout-grid__cell--span-7">
 					<p class="mdc-typography--headline6 footer_destination dest">OUR DESTINATIONS</p>
 					<div class="mdc-layout-grid__inner">
@@ -562,8 +615,8 @@
 							<p class="footer_about_p"><label class="footer_t1">></label> Spain</p>
 							<p class="footer_about_p"><label class="footer_t1">></label> Switserland</p>
 							<p class="footer_about_p"><label class="footer_t1">></label> France</p>
-		
-		
+
+
 						</div>
 						<div class="mdc-layout-grid__cell--span-2  footer_margin">
 							<p class="mdc-typography--subtitle footer_destination">INDIA</p>
@@ -577,8 +630,8 @@
 							<p class="footer_about_p"><label class="footer_destination">></label> France</p>
 							<p class="footer_about_p"><label class="footer_t1">></label> New York</p>
 							<p class="footer_about_p"><label class="footer_t1">></label> Orlando</p>
-		
-		
+
+
 						</div>
 						<div class="mdc-layout-grid__cell--span-2  footer_margin">
 							<p class="mdc-typography--subtitle footer_t2">USA</p>
@@ -588,8 +641,8 @@
 							<p class="footer_about_p"><label class="footer_t2">></label> Orlando</p>
 							<p class="footer_about_p"><label class="footer_t2">></label> Switserland</p>
 							<p class="footer_about_p"><label class="footer_t2">></label> France</p>
-		
-		
+
+
 						</div>
 						<div class="mdc-layout-grid__cell--span-2  footer_margin">
 							<p class="mdc-typography--subtitle footer_t3">FAR EAST</p>
@@ -603,7 +656,7 @@
 							<p class="footer_about_p"><label class="footer_t3">></label> France</p>
 							<p class="footer_about_p"><label class="footer_t4">></label> Russia</p>
 							<p class="footer_about_p"><label class="footer_t4">></label> Spain</p>
-		
+
 						</div>
 						<div class="mdc-layout-grid__cell--span-2  footer_margin">
 							<p class="mdc-typography--subtitle footer_t4">AFRICA</p>
@@ -614,57 +667,29 @@
 							<p class="mdc-typography--subtitle footer_t5">MIDDLE EAST</p>
 							<p class="footer_about_p"><label class="footer_t5">></label> Russia</p>
 							<p class="footer_about_p"><label class="footer_t5">></label> Spain</p>
-		
+
 						</div>
 					</div>
 				</div>
 			</div>
-		
-			<div class="mdc-layout-grid__inner footer_bottom">
-				<div class="mdc-layout-grid__cell--span-12">
-					<center><p>@ 2018 TMG.All Rights Reserved</p></center>
-				</div>
-			</div>
-		</div>
-			
-	</div>
-</div>
-<!-- <div class="about">
-	<div class="custom_container">
-		<div class="mdc-layout-grid ">
-			
-			<div class="mdc-layout-grid__inner" >
-				<h1 class="cent1">our<span style="color: blue;"> Mission</span></h1>
-				<div class="mdc-layout-grid__cell--span-1">
-				</div>
-				<div class="mdc-layout-grid__cell--span-3">
-					<div class="mdc-image-list__image-aspect-container">
-						<img class="mdc-image-list__image" src="images/29.jpg" width="300" height="200" style="border-radius: 210px; border:  5px solid #ec7e50;">
+			<div class="footer_bottom">
+				<div class="custom_container ">
+					<div class="mdc-layout-grid__inner footer_bottom">
+						<div class="mdc-layout-grid__cell--span-12">
+							<center><p class="p2">@ 2018 TMG.All Rights Reserved</p></center>
+						</div>
 					</div>
-				</div>
-				<div class="mdc-layout-grid__cell--span-1">
-				</div>
-				<div class="mdc-layout-grid__cell--span-7">
-					<h3 class="about">About Us</h3>
-					<p class="about">There is some optimism, but hardly certainty, that Smith will be able to resume his NFL career, though the priority for now is simply recovering from a spiral leg fracture that became infected after multiple surgeries.
 
-					</p>
-					<p>That situation now would be a double whammy for Washington. Not only would the Redskins be losing their quarterback if Smith were unable to return, but the team also would have less money to spend on a new one, putting Washington at a major disadvantage the next two years. The Redskins have only approximately $20 million in salary-cap space this offseason, but they can release several high-priced veterans to create more room.That situation now would be a double whammy for Washington. Not only would the Redskins be losing their quarterback if Smith were unable to return, but the team also would have less money to spend on a new one, putting Washington at a major disadvantage the next two years. </p>
-
-					<button class="mdc-button--raised about_btn" style="height: 40px;">
-						<span class="mdc-button__label">READ MORE </span>
-					</button>
 				</div>
 			</div>
+
 		</div>
 	</div>
-</div>
 
--->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>	
-<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>	
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 
 </body>
 </html>
